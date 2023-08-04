@@ -1,5 +1,5 @@
-- hosts: server
+- hosts: server_list
   become: true
   tasks:
-    - name: install git
+    - name: install http
       yum: name=git state=present
